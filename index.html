@@ -17,8 +17,6 @@
     <div class="login-card">
       <h2 class="auth-title">Welcome Back</h2>
       <p class="tagline">Login to FinTrack Pro</p> 
-      <p class="demo-note">Demo authentication — stored in your browser only</p>
-
       <div class="form-group" style="text-align:left;">
         <label for="loginUsername">Username</label>
         <input type="text" id="loginUsername" placeholder="Enter your username">
@@ -27,7 +25,7 @@
         <label for="loginPassword">Password</label>
         <input type="password" id="loginPassword" placeholder="Enter your password">
       </div>
- 
+
       <div class="form-error" id="loginError">Invalid username or password.</div>
 
       <button class="btn btn-login btn-block" id="loginSubmitBtn">Login</button>
@@ -40,8 +38,7 @@
     <div class="login-card">
       <h2 class="auth-title">Create Account</h2>
       <p class="tagline">Join FinTrack Pro</p>
-      <p class="demo-note">Demo authentication — stored in your browser only</p>
-
+      <!-- <br> -->
       <div class="form-group" style="text-align:left;">
         <label for="registerUsername">Choose a Username</label>
         <input type="text" id="registerUsername" placeholder="Enter a username">
@@ -54,7 +51,7 @@
       <div class="form-error" id="registerError">Please fill both fields.</div>
 
       <button class="btn btn-register btn-block" id="registerSubmitBtn">Register</button>
- 
+
       <p class="switch-text">Already have an account? <a href="#" id="goToLoginLink">Login here</a></p>
     </div>
   </div>
@@ -62,7 +59,7 @@
   <!-- ====   app start     ==== -->
   <div id="appWrap" class="hidden">
 
-   <!-- top strip design -->
+    <!-- top strip design -->
     <div class="top-strip"></div>
 
     <!-- left side sidebar, navigation k liy -->
@@ -85,18 +82,18 @@
         </button>
       </div>
 
-      <div class="sidebar-bottom"> 
+      <div class="sidebar-bottom">
         <button class="btn-fab" id="openAddTransactionBtn">+ Add Transaction</button>
       </div>
     </div>
- 
+
     <div class="topbar">
       <span class="user-chip" id="userChip"></span>
       <button class="btn btn-logout" id="logoutBtn">⏻ Logout</button>
     </div>
 
     <div class="main-area">
- 
+
       <div id="dashboardPage" class="page">
         <h1 class="page-title">Financial Overview</h1>
         <p class="page-subtitle">Real-time tracking application</p>
@@ -126,7 +123,7 @@
         </div>
 
         <div class="split-row">
-          <div class="panel-card"> 
+          <div class="panel-card">
             <h2 class="card-title">Cash Flow Analysis</h2>
             <div class="chart-wrap">
               <canvas id="cashFlowChart"></canvas>
@@ -135,7 +132,7 @@
 
           <div class="panel-card">
             <h2 class="card-title">Preferences</h2>
-           
+
             <div class="toggle-row">
               <span>Dark Mode</span>
               <label class="switch">
@@ -144,13 +141,13 @@
               </label>
             </div>
             <hr class="divider">
-            
+
             <button class="btn btn-danger btn-block" id="resetDataBtn">🗑 Reset All Data</button>
           </div>
         </div>
 
         <div class="panel-card">
-          <h2 class="card-title">All Transactions</h2> 
+          <h2 class="card-title">All Transactions</h2>
           <div class="txn-toolbar">
             <div class="search-box">
               <span class="search-icon">🔍</span>
@@ -162,7 +159,7 @@
               <option value="expense">Expense Only</option>
             </select>
           </div>
- 
+
           <table>
             <thead>
               <tr>
@@ -176,7 +173,7 @@
             <tbody id="transactionTableBody"></tbody>
           </table>
         </div>
-      </div> 
+      </div>
 
       <!-- profile change ke liye  -->
       <div id="settingsPage" class="page hidden">
@@ -190,7 +187,7 @@
               <label for="settingsName">Full Name</label>
               <input type="text" id="settingsName" placeholder="Your name">
             </div>
-            <div class="form-group" style="margin-bottom:0;"> 
+            <div class="form-group" style="margin-bottom:0;">
               <label for="settingsCurrency">Primary Currency</label>
               <select id="settingsCurrency">
                 <option value="USD">USD ($)</option>
@@ -237,7 +234,7 @@
         <input type="date" id="txnDate">
       </div>
 
-      <div class="form-group"> 
+      <div class="form-group">
         <label for="txnCategory">Category</label>
         <select id="txnCategory">
           <option>Food & Dining</option>

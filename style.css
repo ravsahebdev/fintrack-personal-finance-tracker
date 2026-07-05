@@ -514,7 +514,8 @@ tbody tr:last-child td {
 }
 
 .form-group {
-    margin-bottom: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -713,13 +714,7 @@ select {
 .login-card p.tagline {
     color: var(--text-muted);
     font-size: 14px;
-    margin: 0 0 4px;
-}
-
-.login-card p.demo-note {
-    color: var(--text-muted);
-    font-size: 11.5px;
-    margin: 0 0 22px;
+    margin: 5px 0 10px;
 }
 
 .btn-login {
